@@ -54,7 +54,7 @@ while True:
                 grand_total += day_total
 
             print("\n" + "-" * 40)
-            print(f"   🧾 GRAND TOTAL: ${grand_total:.2f}")
+            print(f"    GRAND TOTAL: ${grand_total:.2f}")
             print("-" * 40)
 
     elif choice == "3":
