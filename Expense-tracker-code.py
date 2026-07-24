@@ -30,7 +30,7 @@ while True:
         else:
             expenses[date][item] = amount   # New item for that date
 
-        print(f"✅ Added: ${amount:.2f} for '{item}' on {date}")
+        print(f" Added: ${amount:.2f} for '{item}' on {date}")
 
     elif choice == "2":
         if not expenses:
@@ -43,14 +43,14 @@ while True:
             grand_total = 0
 
             for date, items in expenses.items():
-                print(f"\n📅 Date: {date}")
+                print(f"\n Date: {date}")
                 day_total = 0
 
                 for item, amount in items.items():
                     print(f"   - {item}: ${amount:.2f}")
                     day_total += amount
 
-                print(f"   💰 Day Total: ${day_total:.2f}")
+                print(f"    Day Total: ${day_total:.2f}")
                 grand_total += day_total
 
             print("\n" + "-" * 40)
@@ -59,9 +59,9 @@ while True:
 
     elif choice == "3":
         print("\n" + "=" * 40)
-        print("  👋 BYE BYE! THANKS FOR COMING!")
+        print("   BYE BYE! THANKS FOR COMING!")
         print("=" * 40)
         break
 
     else:
-        print("❌ Invalid choice! Please enter 1, 2, or 3.")
+        print(" Invalid choice! Please enter 1, 2, or 3.")
